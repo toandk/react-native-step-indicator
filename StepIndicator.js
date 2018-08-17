@@ -229,9 +229,9 @@ export default class StepIndicator extends PureComponent {
         index === currentPosition
           ? { color: this.state.customStyles.currentStepLabelColor }
           : { color: this.state.customStyles.labelColor }
-      const customLabelStyle = { fontSize: this.customStyles.labelSize }
-      if (this.customStyles.labelFontFamily) {
-        customLabelStyle.fontFamily = this.customStyles.labelFontFamily
+      const customLabelStyle = { fontSize: this.state.customStyles.labelSize }
+      if (this.state.customStyles.labelFontFamily) {
+        customLabelStyle.fontFamily = this.state.customStyles.labelFontFamily
       }
       return (
         <TouchableWithoutFeedback
