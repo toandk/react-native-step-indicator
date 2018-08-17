@@ -416,7 +416,7 @@ const styles = StyleSheet.create({
   stepLabel: {
     fontSize: 12,
     textAlign: 'center',
-    fontWeight: '500'
+    fontWeight: '400'
   },
   stepLabelItem: {
     flex: 1,
