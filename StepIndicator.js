@@ -226,7 +226,7 @@ export default class StepIndicator extends PureComponent {
     const { labels, direction, currentPosition } = this.props
     var labelViews = labels.map((label, index) => {
       const selectedStepLabelStyle =
-        index === currentPosition
+        index < currentPosition
           ? { color: this.state.customStyles.currentStepLabelColor }
           : { color: this.state.customStyles.labelColor }
       const customLabelStyle = { fontSize: this.state.customStyles.labelSize }
